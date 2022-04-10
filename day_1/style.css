@@ -1,0 +1,123 @@
+.title {
+    margin: 300px auto;
+    text-align: center;
+    width: 500px;
+    font-size: 24px;
+}
+
+.text {
+    margin: -235px auto;
+    text-align: center;
+    max-width: 30%;
+    font-size: 18px;
+}
+
+.text__input {
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    text-align: center;
+}
+
+.text__input::placeholder {
+    color: #292121;
+    opacity: 0.4;
+}
+
+.preferences {
+    display: block;
+    margin: 250px auto;
+    width: 100%;
+}
+
+.submit {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: rgb(231, 231, 231);
+    cursor: pointer;
+}
+
+.select {
+    display: block;
+    max-width: 215px;
+    width: 100%;
+    position: relative;
+    margin: 15px auto;
+}
+
+.new-select {
+    position: relative;
+    border: 1px solid #ced4da;
+    padding: 10px 15px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.new-select__list {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    user-select: none;
+}
+
+.new-select__list.on {
+    display: block;
+}
+
+.new-select__item span {
+    display: block;
+    padding: 10px 15px;
+}
+
+.new-select__item span:hover {
+    color: #12b223;
+}
+
+.new-select:after {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    background: url('timer.png') no-repeat right center / cover;
+    opacity: 0.6;
+
+    -webkit-transition: all .27s ease-in-out;
+        -o-transition: all .27s ease-in-out;
+            transition: all .27s ease-in-out;
+
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+         -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+.new-select.on:after {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+            transform: rotate(180deg);
+}
