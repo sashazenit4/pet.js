@@ -1,19 +1,18 @@
 .title {
-    margin: 40vh auto;
+    margin: 300px auto;
     text-align: center;
     width: 500px;
     font-size: 24px;
 }
 
 .text {
-    margin: -35vh auto;
+    margin: -235px auto;
     text-align: center;
     max-width: 30%;
     font-size: 18px;
 }
 
 .text__input {
-    margin-top: 15px;
     display: block;
     width: 100%;
     font-family: inherit;
@@ -34,7 +33,25 @@
     opacity: 0.4;
 }
 
+.preferences {
+    display: block;
+    margin: 250px auto;
+    width: 100%;
+}
 
+.submit {
+    width: 150px;
+    height: 40px;
+    display: block;
+    margin: 20px auto;
+    -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+    border: 0;
+    border-radius: 0;
+    background: rgb(231, 231, 231);
+    cursor: pointer;
+}
 
 .select {
     display: block;
@@ -104,4 +121,3 @@
          -o-transform: rotate(180deg);
             transform: rotate(180deg);
 }
-
