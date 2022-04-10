@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="fav.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Speech</title>
+</head>
+<body>
+    <div class="title">txtToVoice(string str, float speed)</div>
+    <div class="text">
+        <input id="TARGET_STRING" class="text__input" type="text" value="" placeholder="Text here...">
+        <select class="select" name="speed" id="SPEED_SELECTOR">
+            <option disabled>Speed</option>
+            <option value="0.5">x0.5</option>
+            <option value="0.75">x0.75</option>
+            <option value="1">x1</option>
+            <option value="1.25">x1.25</option>
+            <option value="1.5">x1.5</option>
+            <option value="2">x2</option>
+        </select>
+    </div>
+    <script src="selector.js"></script>
+</body>
+</html>
